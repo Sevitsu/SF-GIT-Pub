@@ -1,0 +1,15 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+dep = float(input ('Enter your deposit value:'))
+tkb = round ((per_cent.get('ТКБ') * 0.01 * dep), 2)
+skb = round ((per_cent.get('СКБ') * 0.01 * dep), 2)
+vtb = round ((per_cent.get('ВТБ') * 0.01 * dep), 2)
+sbr = round ((per_cent.get('СБЕР') * 0.01 * dep), 2)
+dep1 = [tkb, skb, vtb, sbr]
+maxdep1 = max(dep1)
+print ('Your start deposit:', dep)
+print ('You get in one Year:')
+print ('ТКБ:', tkb)
+print ('СКБ:', skb)
+print ('ВТБ:', vtb)
+print ('СБЕР:', sbr)
+print ('Your best earning in one Year:', maxdep1)
